@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Playfair',Arial, Helvetica, sans-serif;
+}
+
+
+:root {
+    --font1: ('Playfair');
+
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: var(--font1);
+}
+
+header {
+    height: 100px; 
+    border-bottom: 1px solid #797979; 
+
+}
+
+h1#titulo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 4em;
+    text-align: center;
+    color: rgb(168, 167, 167);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5), 
+    0px 0px 20px rgba(255, 255, 255, 0.3);
+    font-family: 'Playfair';
+}
+
+section.pags{
+    display: inline-block;
+    background-color: white;
+    height: 150px; /* height: 150px; width: 150px;/* */
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+   
+}
+
+div#container{
+  display: flex; /* Ativa o Flexbox */
+  flex-wrap: wrap; /* Permite quebrar linha (2 em 2) */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 10px; /* Espaçamento entre as divs */
+  padding: 10px; /* Espaçamento interno */
+}
+
