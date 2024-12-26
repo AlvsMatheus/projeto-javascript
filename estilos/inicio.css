@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+
 * {
     margin: 0px;
     padding: 0px;
@@ -15,15 +16,22 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     color: white;
     font-family: var(--font1);
 }
 
 header {
-    height: 100px; 
-    border-bottom: 1px solid #797979; 
+    height: 140px; 
+    border-bottom: 1px solid #bea2009f /*#797979*/; 
+    background-size: 100% 100%;
+}
 
+header > p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: #797979;
+   
 }
 
 h1#titulo {
@@ -31,23 +39,33 @@ h1#titulo {
     margin-bottom: 20px;
     font-size: 4em;
     text-align: center;
-    color: rgb(168, 167, 167);
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5), 
-    0px 0px 20px rgba(255, 255, 255, 0.3);
+    color: #ffd700;
+    text-shadow: 0px 0px 25px #ffd700,
+    0px 0px 20px #53470054;
+    /*text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5), 
+    0px 0px 20px rgba(255, 255, 255, 0.3);*/
     font-family: 'Playfair';
 }
 
 section.pags{
-    display: inline-block;
-    background-color: white;
+    background-color: black;
     height: 150px; /* height: 150px; width: 150px;/* */
     width: 150px;
     margin: 10px;
-    text-align: center;
-   
+    box-shadow: 0px 0px 25px #ffd700,
+    0px 0px 20px #53470054;
+    border-radius: 50px;
+    transition: transform 0.4s ease; /* Suaviza o movimento */
+}
+
+section.pags:hover{
+    transform: translateY(-8px) translateX(10px);
+
 }
 
 div#container{
+  /*feito no gpt, pois ainda não estudei flexbox*/
+
   display: flex; /* Ativa o Flexbox */
   flex-wrap: wrap; /* Permite quebrar linha (2 em 2) */
   justify-content: center; /* Centraliza horizontalmente */
@@ -55,4 +73,12 @@ div#container{
   gap: 10px; /* Espaçamento entre as divs */
   padding: 10px; /* Espaçamento interno */
 }
+
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50px;
+}
+
+
 
