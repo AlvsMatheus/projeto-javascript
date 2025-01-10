@@ -27,7 +27,8 @@ body{
 }
 
 header{
-    background-image: linear-gradient(to bottom, #FFD700, #ffdc19)
+    background-image: linear-gradient(to bottom, #FFD700, #ffdc19);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.815);
     
 }
 
