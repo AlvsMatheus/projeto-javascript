@@ -30,7 +30,7 @@
           <h2 class="temas">Strings</h2>
           <div>
             <p>
-                String é o Data Type que representa "conjunto de caracteres", como por exemplo: Nomes, Marcas, CPF, Número de celular, etc...
+                <strong class="yellow">String</strong> é o Data Type que representa <strong class="yellow">"conjunto de caracteres"</strong>, como por exemplo: Nomes, Marcas, CPF, Número de celular, etc...
             </p>
             <p>
                 Podemos descobrir se o código é uma String ou não utilizando o comando "typeof + espaço + (nome da variável escolhida)" como no exemplo abaixo:
@@ -42,24 +42,41 @@
             <div>
                 <h2 class="temas">Formatação de Strings</h2>
 
-                <p>Existem comandos que alteram o tipo dos elementos do código, podendo transformar strings em números, número em boolean, etc..
-                Cada comando exerce uma função diferente na formatação dos Strings, um não faz interpolação, outros fazem concatenação, além disso, ainda existe template de String. </p>
+                <p>Existem comandos que alteram o tipo dos elementos do código, <strong class="yellow">podendo transformar strings em números, número em boolean, etc..</strong>
+                Cada comando exerce uma função diferente na formatação dos Strings, um não faz <strong  class="yellow">interpolação</strong>, outros fazem <strong class="yellow" >concatenação</strong>, além disso, ainda existe <strong class="yellow" >template de String.</strong> </p>
 
-                <h3 class="temas"> Concatenação</h2>
+                <h3 class="subtitulos"> Concatenação</h2>
                     <p>
-                        Concatenação é o nome dado a duas coisas, primeiramente, é o nome dado ao método de organização de strings em que "quebramos" o código, ao invés de escrevermos ele inteiro. 
+                        <strong class="yellow">Concatenação</strong> é o nome dado a duas coisas, primeiramente, é o nome dado ao método de organização de strings em que "quebramos" o código, ao invés de escrevermos ele inteiro. 
                         Como exemplo: "Olá, meu nome é + name +, "tenho" + age + "anos". </p>
                         <p>
-                            Além disso, quando fazemos um cálculo utilizando o método de concatenação, o resultado pode somente juntar os números. Como exemplo: "2" + "2" resultará em 22. Essa junção de elementos também chama-se concatenação
+                            Além disso, quando fazemos um cálculo utilizando o método de concatenação, o resultado pode somente juntar os números. Como exemplo: "2" + "2" resultará em 22. <strong class="yellow">Essa junção de elementos também chama-se concatenação.</strong>
                         </p>
                         
                     
-                    <h3 class="temas"> Interpolação</h3>
+                    <h3 class="subtitulos"> Interpolação </h3>
                     <p>
-                        Interpolação é o método de formatação de strings em que utilizamos templates (${ }) e substituímos as aspas por crases (``), assim, podemos escrever o código inteiro sem quebrá-lo. Como exemplo: `Olá, meu nome é ${nome} e eu tenho ${idade} anos.`<br>
+                        <strong class="yellow">Interpolação</strong> é o método de formatação de strings em que utilizamos <strong class="yellow">templates (${ })</strong> e substituímos as aspas por crases (``), assim, podemos escrever o código inteiro sem quebrá-lo. Como exemplo: `Olá, meu nome é <strong class="yellow">${nome}</strong> e eu tenho <strong class="yellow">${idade}</strong> anos.<br>
             
-
                     </p>
+            </div>
+        </article>
+        <article>
+            <h2 class="temas"> Acentuações em strings </h2>
+            <div>
+                
+                <h3 class="subtitulos">Apóstrofo:</h3>
+                <p>
+                    O <strong class="yellow">apóstrofo ('')</strong> é utilizado em strings mais simples, ele <strong class="yellow">não suporta caracteres especiais</strong> e pode ser quebrado caso use outro apóstrofo dentro do código.
+
+
+                </p>
+                <h3 class="subtitulos">Aspas:</h3>
+            <p> Seguinto o mesmo conceito do apóstrofo, as <strong class="yellow">aspas ("")</strong> também conflitam quando se é usada <strong class="yellow">aspas</strong> novamente dentro do código, porém, diferencia-se do apóstrofo ao <strong class="yellow">aceitar caracteres especiais</strong> em sua composição.</p>
+
+                <h3 class="subtitulos">Crase:</h3>
+                <p> O método com uso de <strong class="yellow">crases (``)</strong> para organizar as Strings é o melhor e <strong class="yellow">mais organizado</strong> pois, além de suportar os <strong class="yellow">templates (${ })</strong>, que evitam a quebra do código, eles também <strong class="yellow">aceitam caracteres especiais</strong> e, além disso, <strong class="yellow">aceitam strings com múltiplas linhas.</strong>  </p>
+
             </div>
         </article>
     </main>
