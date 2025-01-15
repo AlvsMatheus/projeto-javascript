@@ -1,11 +1,5 @@
 @charset "UTF-8";
-
 /*
-#383825
-#8B8A2E
-#E1DF00
-#373825
-#FFC857
 background-image: linear-gradient(to bottom, #fcf940, #d8d533, #bbb92c)
 */
 *{
@@ -28,7 +22,7 @@ body{
 
 header{
     background-image: linear-gradient(to bottom, #FFD700, #ffdc19);
-    box-shadow: 1px 3px 10px black;
+    box-shadow: 5px 7px 20px 1px black;;
     
 }
 
@@ -36,12 +30,9 @@ header > h1{
     text-align: center;
     font-size: 4em;
     text-shadow: 2px 2px 2px #d6b600;
-    
-    
 }
 header > p{
     text-align: center;
-    margin-bottom: 30px;
 }
 
 nav > ul > li{
@@ -49,9 +40,6 @@ nav > ul > li{
     display: inline-block;
     padding: 10px;
     margin-bottom: 10px;
-    
-    
-    
 }
 nav > ul > li:hover{
     background-color: #ffed88;
@@ -62,24 +50,28 @@ nav > ul > li > a{
     color:black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
-
 }
 
 main{
     color: white;
-    padding: 50px;
+    padding-top: 20px;
 }
 h2.temas{
     color: white;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.384);
     background-image:linear-gradient(to right, #FFD700, #ffd900a1, #ffd90000);
-    text-indent:15px;
+    text-indent:10px;
     border-radius: 20px;
-
-}
-main > article > h2{
     font-size: 2em;
-    font: bolder;
+    font-weight: bolder;
+}
+
+h3.subtitulos{
+    font-size: 1.5em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #faba30de;
+    text-shadow: 1px 1px 1px black;
+    padding-top: 20px;
 }
 
 strong.yellow{
@@ -87,35 +79,33 @@ strong.yellow{
     font-weight: bolder;
     font-size: 1em;
 }
+
 div > p{
-    padding-top: 10px;
-    padding-bottom: 30px;
-    margin-right: 20%;
-    
-    
-    
+    padding: 10px;
 }
 
 div > img{
     width: 100%;
-
 }
 
 div.exemplo{
     height: 220px;
-    margin-top:20px;
-    margin-bottom: 20px;
     background-image:url(../imagens/variavel-cell.png);
     background-repeat: no-repeat;
     background-attachment: cover;
     background-position: center center;
 }
 
-h3.subtitulos{
-    font-size: 1.7em;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #faba30de;
-    text-shadow: 1px 1px 1px black;
+article{
+    padding: 50px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+li.operators{
+    
+    text-indent: 20px;
+    list-style-position: inside;
+}
+
+in

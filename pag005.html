@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS: Soma de valores</title>
+    <link rel="stylesheet" href="estilos/style.css">
+
+</head>
+<header>
+    <h1>Java script</h1>
+    <p>Módulos: A, B, C e D</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="pag001.html">Variáveis</a></li>
+            <li><a href="pag002.html">Data Types</a></li>
+            <li><a href="">Strings</a></li>
+            <li><a href="pag004.html">Operadores</a></li>
+            <li><a href="">Soma de Valores</a></li>
+            <li><a href="">DOM</a></li>
+            <li><a href="">Condições</a></li>
+            <li><a href="">Comandos</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <article>
+        <h2 class="temas">Cálculos básicos</h2>
+         <input class="valores" type="number" name="valor1" id="ivalor1" placeholder="selecione um valor">
+         <label for="ivalor1"></label> +
+
+         <input class="valores" type="number" name="valor12" id="ivalor2" placeholder="selecione um valor">
+         <label for="ivalor2"></label>
+
+         <input class="somei"  type="button" value="Somar" onclick="somar()">
+         <input class="somei" type="reset" value="Limpar">
+         <div id="result">Resultado:</div>
+    </article>
+    <script>
+        function somar(){
+            var valor01 = document.getElementById('ivalor1')
+            var valor02 = document.querySelector('input#ivalor2')
+            var result = document.getElementById('result')
+            var n1 = Number(valor01.value)
+            var n2 = Number(valor02.value)
+            var soma = n1 + n2
+            result.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${soma}`
+        }
+    </script>
+</main>
+</html>

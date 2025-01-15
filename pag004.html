@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS: Operadores</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
+    <header>
+        <h1>Java script</h1>
+        <p>Módulos: A, B, C e D</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pag001.html">Variáveis</a></li>
+                <li><a href="pag002.html">Data Types</a></li>
+                <li><a href="">Strings</a></li>
+                <li><a href="pag004.html">Operadores</a></li>
+                <li><a href="">Soma de Valores</a></li>
+                <li><a href="">DOM</a></li>
+                <li><a href="">Condições</a></li>
+                <li><a href="">Comandos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            
+            <div>
+                <h2 class="temas">Operadores Gerais</h2>
+                <p>
+                    Os <strong class="yellow">operadores</strong> são os simbolos que utilizamos para retratar operações matemáticas nos códigos, ou para manipular um valor <strong class="yellow">boolean</strong>.
+                </p>
+                <h3 class="subtitulos"> Operadores Aritméticos </h3>
+                <p>Os operadores padrões são os que utilizamos em cálculos normais, como em uma calculadora. São eles: 
+                </p>
+                <ul>
+                    <li  class="operators">Adição ( + ): (5 + 5 = 10)</li>
+                    <li  class="operators">Subtração ( - ): (8 - 4 = 4)</li>
+                    <li  class="operators">Multiplicação ( * ): (8 * 4 = 32) </li>
+                    <li  class="operators">Divisão ( / ): (8 / 4 = 2)</li>
+                    <li  class="operators">Resto da divisão ( % ): (5 % 2 = 1)</li>
+                    <li  class="operators">exponenciação ( ** ): (4**2 = 16)</li>
+                </ul>
+
+                <h3 class="subtitulos">Operadores Relacionais</h3>
+                <p>São os operadores utilizamos para estabelecer comparação entre dois valores</p>
+                <ul>
+                    <li  class="operators">== : Idêntico; não em significado ( 5 == 5 <strong class="yellow">True</strong>)
+
+                    <li  class="operators">! : Not ( Torna operadores de "aprovação" em <strong class="yellow">negação</strong> ) 
+
+                    <li  class="operators">!= : não igual (5 != 2 <strong class="yellow">True</strong>)
+
+                    <li  class="operators"> &gt; : Maior que (5 &gt; 2 <strong class="yellow">True</strong>)
+
+                    <li  class="operators"> &lt;  : Menor que (20 &lt; 40 <strong class="yellow">True</strong>)
+
+                    <li  class="operators"> &gt;= : Maior ou igual que (2 &gt;= 2 <strong class="yellow">True</strong>)
+
+                    <li  class="operators"> &lt;= : Menor ou igual que (4 &lt;= 3 <strong class="yellow" >True</strong>)
+                </ul>
+                <h3 class="subtitulos">Operadores de atribuição</h3>
+                <p>Simbolos utilizados para atribuir valores às variáveis</p>
+                        <ul>
+                            <li class="operators">= : recebe (let x = 5)
+                            <li class="operators"> += : adicionar e receber (x += 2, logo, x = x+2)
+                            <li  class="operators">-= : subtrair e receber (x -= 1, logo, x = x-1)
+                            <li  class="operators">*= : multiplicar e recceber (x *= 2, logo, x = x*2)
+                            <li  class="operators">/= : dividir e receber (x /= 4, logo, x = x/4)
+                        </ul>
+            </div>
+        </article>
+        <article>
+             <div>
+             <h2 class="temas">Operadores Boolean</h2>
+                 <p>Operadores boolean trabalham para manipular os valores dos dados boolean<strong class="yellow">(True or False)</strong></p>
+
+                 <h3 class="subtitulos">Operadores Lógicos</h3>
+                 <p>Usados para combinar ou modificar os Boolean expressions</p>
+                 <ul>
+
+                    <li class="operators">AND : é True caso ambas afirmações forem True.<br> ex:  (5 &gt; 2 and 4 &lt; 6)</li>
+
+                    <li class="operators">OR : é True caso a outra condição seja True <br> ex: (5 &gt; 2 or) or (4 &lt; 6)</li>
+
+                    <li class="operators">Not : Nega um valor Boolean <br>ex: not (5 &gt; 2), logo, False, pois 5 > 2 é True</li>
+                 </ul>
+            </div>
+        </article>
+        <article>
+            <div>
+                <h2 class="temas">Hierarquia de operadores</h2>
+                <p>Os operadores em JS, assim como na matemática, precisam obedecer uma hierarquia para que o cálculo seja correto.</p>
+                <ul>
+                    <li type="1" class="operators">Parênteses</li>
+                    <li type="1" class="operators">Exponenciação </li>
+                    <li type="1" class="operators">Multiplicação, divisão e módulos (*, /, %) </li>
+                    <li type="1" class="operators">Adição e subtração (+ e -) </li>
+                    <li type="1" class="operators">Comparações (==, !=, &gt;, &lt;, &gt;= &lt;=) </li>
+                    <li type="1" class="operators">Not (not) </li>
+                    <li type="1" class="operators">And (and) </li>
+                    <li type="1" class="operators">Or (or) </li>
+                </ul>
+            </div>
+        </article>
+    </main>
     
 </body>
 </html>
