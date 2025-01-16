@@ -43,7 +43,18 @@
              <input class="somei" type="reset" value="Limpar" onclick="resetResult()">
             </div>
              <div id="result"></div>
-         
+    </article>
+    <article>
+        <div class="explicacao">
+            <h3 class="subtitulos">Por trás do site...</h3>
+            <p>Para realizarmos essa operação precisamos programar alguns simples códigos em JS. </p>
+            <p>Primeiro, criamos os inputs no html, este que serve para criarmos o local onde colocaremos os valores.
+            </p>
+            <p>Após isso, damos um "id" para todos eles, além de colocarmos o atributo "onclick" nos botões que realizarão alguma ação, como no exemplo, somar e resetar</p>
+            <p>Indo para JS, lá criamos a tag &lt;script&gt; para conseguirmos executar códigos em JavaScript, e lá criamos a function somar(), os parênteses servem para indicar que faremos uma ação.</p>
+            <p>Dentro dessa function, criamos variáveis para selecionar os input,converter os inputs, criamos os valores e os resultados</p>
+        </div>
+        <div > <img id="calculo" src="imagens/script.png" alt=""></div>
     </article>
     <script>
         function somar(){

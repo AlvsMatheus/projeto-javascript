@@ -65,4 +65,13 @@ div#result{
     justify-content: center;
     color: #f7ee9d;
     text-shadow: solid 1px 1px 1px black;
-}
+    }
+#calculo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:380px;
+    height: 300px;
+    padding-top: 20px;
+
+    }
