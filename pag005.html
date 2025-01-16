@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS: Soma de valores</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/comandos.css">
 
 </head>
 <header>
@@ -27,15 +28,22 @@
 <main>
     <article>
         <h2 class="temas">Cálculos básicos</h2>
-         <input class="valores" type="number" name="valor1" id="ivalor1" placeholder="selecione um valor">
-         <label for="ivalor1"></label> +
+         
+             <div class="inputgroup">
+                 <input class="valores" type="number" name="valor1" id="ivalor1" placeholder="selecione um valor">
+                 <label for="ivalor1"></label>
+                 <span class="mais">+</span>
+                 <input class="valores" type="number" name="valor12" id="ivalor2" placeholder="selecione um valor">
+                 <label for="ivalor2"></label>
+             </div>
+         
 
-         <input class="valores" type="number" name="valor12" id="ivalor2" placeholder="selecione um valor">
-         <label for="ivalor2"></label>
-
-         <input class="somei"  type="button" value="Somar" onclick="somar()">
-         <input class="somei" type="reset" value="Limpar">
-         <div id="result">Resultado:</div>
+             <div class="limpar">
+             <input class="somei"  type="button" value="Somar" onclick="somar()">
+             <input class="somei" type="reset" value="Limpar" onclick="resetResult()">
+            </div>
+             <div id="result"></div>
+         
     </article>
     <script>
         function somar(){
@@ -45,7 +53,10 @@
             var n1 = Number(valor01.value)
             var n2 = Number(valor02.value)
             var soma = n1 + n2
-            result.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${soma}`
+            result.innerHTML = `${soma}`
+        }
+        function resetResult(){
+            document.getElementById('result').innerHTML = '';
         }
     </script>
 </main>
